@@ -1,0 +1,20 @@
+﻿@model IEnumerable<SweetBakery.Models.ViewModels.ProductosViewModel>
+@{
+    Layout="Layout";
+}
+        <section class="productos">
+            @foreach (var item in Model)
+            {
+                <h2>@item.Categoria</h2>
+                @foreach (var p in item.Postres)
+                {
+                    <div class="datos">
+                        <img src="~/Imagenes/productos/@(p.Id).png" />
+                        <div class="info">
+                            <h5>@p.Nombre</h5>
+                            <p>@p.Descripcion</p>
+                        </div>
+                    </div>
+                }
+            }
+        </section>

@@ -1,0 +1,24 @@
+﻿@model SweetBakery.Models.ViewModels.RecetasViewModel
+
+@{
+    Layout = "Layout";
+}
+        <section class="contenedor">
+
+            @foreach (var item in Model.Recetas)
+            {
+
+                <div>
+                    <div>
+                        <img src="~/imagenes/recetas/@(item.Id).png" />
+                    </div>
+                    <a href="~/Receta/@item.Nombre.Replace(" ","-")">
+                        <h2>@item.Nombre</h2>
+                    </a>
+                    <p>@item.Descripcion</p>
+                </div>
+
+            }
+        </section>
+
+

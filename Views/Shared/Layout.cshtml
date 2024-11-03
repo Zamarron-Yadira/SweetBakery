@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SWEET BAKERY</title>
+    <link rel="stylesheet" href="~/pasteleria.css" />
+</head>
+<body>
+    <header>
+       <h2>Yadira Guadalupe Zamarron Rodriguez - 201G0292</h2>
+        <a id="logo">
+            <img src="~/imagenes/index/sweetbakery.png" />
+        </a>
+        <ul class="Menu">
+            <li>
+                <a href="~/Home/Index">Inicio</a>
+            </li>
+            <li>
+                <a href="~/Productos">Productos</a>
+            </li>
+            <li>
+                <a href="~/Recetas">Recetas</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <h3>Siguenos:</h3>
+        <a href="#">
+            <img src="~/imagenes/facebook.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/twitter.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/pinterest.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/youtube.png" />
+        </a>
+    </footer>
+</body>
+</html>
